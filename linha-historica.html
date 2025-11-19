@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linha do Tempo da Bíblia</title>
+<link rel="icon" href="biblia.png">
+
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #FDF6E3;
+        color: #6B4C3B; 
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        background-color: #6B4C3B;
+        padding: 12px 0;
+        text-align: center;
+        z-index: 100;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+        color: #F5F0E1;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #D4AF37; 
+        text-decoration: underline;
+    }
+
+    header {
+        text-align: center;
+        padding: 30px;
+        font-size: 32px;
+        font-weight: bold;
+        color: #F5F0E1; 
+        background-color: #8C5A3C; 
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    }
+
+    .content {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    h2, h3 {
+        margin-top: 25px;
+        color: #6B4C3B; 
+    }
+
+    .timeline {
+        display: flex;
+        gap: 20px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        background: #FFF8E7; 
+        border-radius: 10px;
+        padding: 20px;
+        flex: 1;
+        min-width: 260px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        border-left: 4px solid #8C5A3C; 
+        transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+        background-color: #EEDFCC; 
+    }
+
+    ul.lista {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    ul.lista li {
+        margin: 8px 0;
+        padding-left: 25px;
+        background: url('https://cdn-icons-png.flaticon.com/512/60/60609.png') no-repeat left center;
+        background-size: 16px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: #FFF8E7;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    thead {
+        background-color: #8C5A3C;
+        color: #F5F0E1; 
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background: #EEDFCC; 
+    }
+
+    tr:hover {
+        background-color: #D4AF37;
+        color: #6B4C3B;
+    }
+
+    .imagem {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .imagem img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 700px) {
+        header {
+            font-size: 25px;
+            padding: 20px;
+        }
+
+        .card {
+            min-width: 100%;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Página Principal</a>
+    <a href="velho-testamento.html">Antigo Testamento</a>
+    <a href="novo-testamento.html">Novo Testamento</a>
+    <a href="linha-historica.html">Linha histórica</a>
+    <a href="cadastro.html">Cadastro</a>
+</nav>
+
+<header>Linha do Tempo da Bíblia</header>
+
+<div class="content">
+
+    <h2>Etapas Importantes da Formação Bíblica</h2>
+
+    <div class="timeline">
+        <div class="card">
+            <h3>Antigo Testamento</h3>
+            <p>Formação dos textos hebraicos, tradições orais e registros proféticos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Período Intertestamentário</h3>
+            <p>Tradução da Septuaginta e desenvolvimento cultural judaico.</p>
+        </div>
+
+        <div class="card">
+            <h3>Novo Testamento</h3>
+            <p>Evangelhos, cartas apostólicas e a expansão da igreja primitiva.</p>
+        </div>
+    </div>
+
+    <h2>Manuscritos Importantes</h2>
+
+    <ul class="lista">
+        <li>Papiro Chester Beatty</li>
+        <li>Códice Sinaítico</li>
+        <li>Códice Vaticano</li>
+        <li>Manuscritos do Mar Morto</li>
+    </ul>
+
+    <h2>Tabela Histórica</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Período</th>
+                <th>Data</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Patriarcal</td>
+                <td>2000–1500 a.C.</td>
+                <td>Tradições e relatos antigos.</td>
+            </tr>
+            <tr>
+                <td>Profetas</td>
+                <td>900–400 a.C.</td>
+                <td>Escritos proféticos e históricos.</td>
+            </tr>
+            <tr>
+                <td>Evangelhos</td>
+                <td>50–90 d.C.</td>
+                <td>Vida e ensinamentos de Jesus.</td>
+            </tr>
+            <tr>
+                <td>Cartas</td>
+                <td>50–100 d.C.</td>
+                <td>Doutrina cristã inicial.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="imagem">
+        <img src="manuscrito.jpeg">
+            </div>
+
+</div>
+
+</body>
+</html>
