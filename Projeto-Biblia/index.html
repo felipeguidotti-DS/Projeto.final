@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site sobre a Bíblia</title>
+    <link rel="icon" href="biblia.png">
+
+   <style>
+    .menu {
+        background-color: #6B4C3B; 
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .menu a {
+        color: #F5F0E1; 
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        color: #D4AF37; 
+        text-decoration: underline;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #FDF6E3; 
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #8C5A3C; 
+        color: #F5F0E1; 
+        text-align: center;
+        padding: 25px 15px;
+        font-size: 26px;
+        font-weight: bold;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header .subtitulo {
+        font-size: 16px;
+        font-weight: normal;
+        margin-top: 8px;
+        display: block;
+        line-height: 1.4;
+        color: #EDE1C7; 
+    }
+
+    nav {
+        background-color: #6B4C3B; 
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: #F5F0E1;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #D4AF37;
+        text-decoration: underline;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 900px;
+        margin: 20px auto;
+        background-color: #FFF8E7; 
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #6B4C3B; 
+    }
+
+    .lista {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .lista li {
+        background-color: #EEDFCC; 
+        padding: 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: 0.2s;
+    }
+
+    .lista li:hover {
+        background-color: #D4AF37; 
+        transform: translateY(-2px);
+    }
+
+
+    .botao-voltar {
+        display: inline-block;
+        margin-top: 15px;
+        background-color: #8C5A3C;
+        color: #F5F0E1;
+        padding: 8px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .botao-voltar:hover {
+        background-color: #6B4C3B;
+    }
+</style>
+
+
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Página Principal</a>
+        <a href="velho-testamento.html">Antigo Testamento</a>
+        <a href="novo-testamento.html">Novo Testamento</a>
+        <a href="linha-historica.html">Linha histórica</a>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+
+    <header id="top">
+        Bíblia Sagrada – Origem e Estrutura
+        <span class="subtitulo">“Toda a Escritura é inspirada por Deus e útil para o ensino, para a repreensão, para a correção e para a instrução na justiça…” — <strong>2 Timóteo 3:16-17</strong></span>
+    </header>
+
+    <nav>
+        <a href="#origem">Origem</a>
+        <a href="#divisao">Divisão</a>
+        <a href="#info">Informações</a>
+    </nav>
+
+    <div class="box" id="origem">
+        <h2>Origem da Bíblia</h2>
+        <p>A Bíblia é um conjunto de textos sagrados preservados ao longo de milênios. Ela reúne histórias, leis, poesia, sabedoria e profecias que moldaram a fé judaico-cristã.</p>
+        <p>Escrita originalmente em hebraico, aramaico e grego, sua formação envolveu muitos autores e gerações.</p>
+        <a href="#top" class="botao-voltar">Voltar ao topo</a>
+    </div>
+
+    <div class="box" id="divisao">
+        <h2>Como a Bíblia é dividida</h2>
+        <ul>
+            <li><strong>Antigo Testamento</strong> – antes de Cristo</li>
+            <li><strong>Novo Testamento</strong> – vida e ensinamentos de Jesus</li>
+        </ul>
+        <a href="#top" class="botao-voltar">Voltar ao topo</a>
+    </div>
+
+    <div class="box" id="info">
+        <h2>Informações importantes sobre a Bíblia</h2>
+        <ul class="lista">
+            <li>A Bíblia foi escrita por mais de 40 autores diferentes.</li>
+            <li>Possui cerca de 1600 anos de história entre o primeiro e o último livro escrito.</li>
+            <li>É o livro mais traduzido e distribuído do mundo.</li>
+            <li>O Antigo Testamento é a base das Escrituras judaicas.</li>
+            <li>O Novo Testamento apresenta a vida, morte e ressurreição de Jesus Cristo.</li>
+            <li>Existem dezenas de versões e traduções ao redor do mundo.</li>
+        </ul>
+
+        <a href="#top" class="botao-voltar">Voltar ao topo</a>
+    </div>
+
+</body>
+</html>
